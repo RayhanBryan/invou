@@ -17,9 +17,9 @@
 <script>
   import BannerOne from '../components/BannerOne.vue'
   import ConnectUs from '../components/ConnectUs.vue'
-import CountOrg from '../components/CountOrg.vue'
-import OurEvent from '../components/OurEvent.vue'
-import SupportedBy from '../components/SupportedBy.vue'
+  import CountOrg from '../components/CountOrg.vue'
+  import OurEvent from '../components/OurEvent.vue'
+  import SupportedBy from '../components/SupportedBy.vue'
   import TheJourney from '../components/TheJourney.vue'
   import TheJumbotron from '../components/TheJumbotron.vue'
 
