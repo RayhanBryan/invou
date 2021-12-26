@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid mx-0 pa-0 class="all">
+    <v-container fluid py-0 class="all">
         <v-row
             align="center"
             justify="center"
@@ -30,7 +30,6 @@
       <v-slide-item
         v-for="event in events"
         :key="name in event"
-        v-slot="{ active, toggle }"
       >
         <v-card
           :to=" event.to "

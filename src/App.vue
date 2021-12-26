@@ -110,6 +110,14 @@
           <h3>Partner Utama</h3>
         </v-col>
       </v-row>
+      <v-row
+        class="text-center"
+        justify="center"
+      >
+        <v-col>
+          <p>Copyright © 2021. All rights reserved. Yogyakarta.</p>
+        </v-col>
+      </v-row>
     </v-container>
   </v-app>
 </template>

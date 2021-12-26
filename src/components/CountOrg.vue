@@ -1,5 +1,5 @@
 <template>
-    <v-container class="all" fluid ma-0 pa-0>
+    <v-container class="all" fluid my-0 py-0>
         <v-row class="text-center">
             <v-col>
                 <h1>PELAJARI EKOSISTEM INVOU DALAM ANGKA</h1>
@@ -15,11 +15,12 @@
                     justify="center"
                 
                 >
-                    <h2> {{countdown}} </h2>
+                    <h2> {{ item.count }} </h2>
                 </v-row>
                 <v-row
                     align="center"
                     justify="center"
+                    class="text-center"
                 >
                     <h5> {{ item.title }} </h5>
                 </v-row>
@@ -55,6 +56,12 @@
 @media screen and (max-width: 991px) {
     .all {
         border-top-left-radius: 0;
+    }
+    h2 {
+        font-size: 100px;
+    }
+    h5 {
+        font-size: 10px;
     }
 }
 </style>
@@ -110,18 +117,18 @@ export default {
     //         this.countSeconds();
     //     }
 
-    methods: {
-        countSeconds() {
-                        if(this.countdown> 0) {
-                            setTimeout(() => {
-                                this.countdown += 1
-                                this.countSeconds()
-                            }, 500);
-                        }
-                    }
-        },
-        created() {
-            this.countSeconds();
-        }
+    // methods: {
+    //     countSeconds() {
+    //                     if(this.countdown> 0) {
+    //                         setTimeout(() => {
+    //                             this.countdown += 1
+    //                             this.countSeconds()
+    //                         }, 500);
+    //                     }
+    //                 }
+    //     },
+    //     created() {
+    //         this.countSeconds();
+    //     }
 }
 </script>

@@ -3,7 +3,7 @@
         <v-row>
             <v-col>
                 <v-img
-                    src="../assets/journey1.png"
+                    src="../assets/journey1.svg"
                     class="image1"
                 >
 
@@ -19,7 +19,7 @@
                 </div>
             </v-col>
         </v-row>
-        <v-row>
+        <v-row class="swap">
             <v-col
                 align-self="center"
             >
@@ -38,7 +38,7 @@
             </v-col>
             <v-col>
                 <v-img
-                    src="../assets/journey2.png"
+                    src="../assets/journey2.svg"
                     class="image2"
                 >
 
@@ -48,7 +48,7 @@
         <v-row>
             <v-col>
                 <v-img
-                    src="../assets/journey3.png"
+                    src="../assets/journey3.svg"
                     class="image3"
                 >
 
@@ -112,22 +112,17 @@
     }
 
 @media screen and (max-width: 767px) {
-    .all{
-
-    }
     .text1{
         text-align: center;
         margin: auto;
     }
     .text2{
-        position: relative;
-        top: 210px;
         text-align: center;
         margin: auto;
     } 
-    .image2 {
-        position: relative;
-        bottom: 270px;
+    .swap {
+        display: flex;
+        flex-flow: column-reverse;
     }
     .break1 {
         margin-bottom: 50px;
